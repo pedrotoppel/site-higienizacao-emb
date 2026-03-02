@@ -186,7 +186,7 @@ if (carousel2 && prevBtn2 && nextBtn2 && dotsContainer2) {
     startAuto2();
 }
 
-// ================= CARROSSEL 3 NOSSOS RESULTADOS =================
+// ================= CARROSSEL 3 =================
 const carousel3 = document.getElementById("carousel3");
 const prevBtn3 = document.getElementById("prev3");
 const nextBtn3 = document.getElementById("next3");
@@ -259,4 +259,79 @@ if (carousel3 && prevBtn3 && nextBtn3 && dotsContainer3) {
 
     updateCarousel3();
     startAuto3();
+}
+
+// ================= CARROSSEL 4 NOSSOS RESULTADOS =================
+const carousel4 = document.getElementById("carousel4");
+const prevBtn4 = document.getElementById("prev4");
+const nextBtn4 = document.getElementById("next4");
+const dotsContainer4 = document.getElementById("dots4");
+
+if (carousel4 && prevBtn4 && nextBtn4 && dotsContainer4) {
+
+    const slides4 = carousel4.children;
+    let index4 = 0;
+    let interval4;
+
+    // Criar bolinhas
+    for (let i = 0; i < slides4.length; i++) {
+        const dot4 = document.createElement("button");
+        dot4.className =
+            "w-3 h-3 rounded-full bg-gray-300 transition cursor-pointer";
+
+        dot4.addEventListener("click", () => {
+            index4 = i;
+            updateCarousel3();
+            resetAuto3();
+        });
+
+        dotsContainer4.appendChild(dot4);
+    }
+
+    function updateCarousel4() {
+        carousel4.style.transform = `translateX(-${index4 * 100}%)`;
+
+        [...dotsContainer4.children].forEach((dot4, i) => {
+            dot4.classList.toggle("bg-blue-900", i === index4);
+            dot4.classList.toggle("bg-gray-300", i !== index4);
+        });
+    }
+
+    function nextSlide4() {
+        index4 = (index4 + 1) % slides4.length;
+        updateCarousel4();
+    }
+
+    function prevSlide4() {
+        index4 = (index4 - 1 + slides4.length) % slides4.length;
+        updateCarousel4();
+    }
+
+    function startAuto4() {
+        interval4 = setInterval(nextSlide4, 4000);
+    }
+
+    function resetAuto4() {
+        clearInterval(interval4);
+        startAuto4();
+    }
+
+    nextBtn4.addEventListener("click", () => {
+        nextSlide4();
+        resetAuto4();
+    });
+
+    prevBtn4.addEventListener("click", () => {
+        prevSlide4();
+        resetAuto4();
+    });
+
+    carousel4.parentElement.addEventListener("mouseenter", () => {
+        clearInterval(interval4);
+    });
+
+    carousel4.parentElement.addEventListener("mouseleave", startAuto4);
+
+    updateCarousel4();
+    startAuto4();
 }
