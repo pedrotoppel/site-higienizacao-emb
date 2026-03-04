@@ -1,3 +1,11 @@
+// =================== LocalStorage ==================
+
+acesso = localStorage.getItem("PrimeiroAcesso");
+
+if(acesso != 1){
+    window.location.href = "welcome.html";
+}
+
 // ==================== MENU ===================
 const menuBtn = document.getElementById('menuBtn');
 const closeBtn = document.getElementById('closeBtn');
@@ -344,3 +352,4 @@ function RedirecionarWhats(){
 
 // ============================================= Animações ============================================
 
+// ============================================== DOM Content Loaded ===================================
