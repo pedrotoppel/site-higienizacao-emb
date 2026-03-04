@@ -335,3 +335,9 @@ if (carousel4 && prevBtn4 && nextBtn4 && dotsContainer4) {
     updateCarousel4();
     startAuto4();
 }
+
+// ================================= Função Redirecionar para Whats =============================
+
+function RedirecionarWhats(){
+    window.location.href = "https://wa.me/message/APCRMGCYRVWVK1";
+}
