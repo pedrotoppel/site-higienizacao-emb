@@ -341,3 +341,6 @@ if (carousel4 && prevBtn4 && nextBtn4 && dotsContainer4) {
 function RedirecionarWhats(){
     window.location.href = "https://wa.me/message/APCRMGCYRVWVK1";
 }
+
+// ============================================= Animações ============================================
+
