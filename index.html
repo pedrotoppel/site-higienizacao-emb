@@ -32,7 +32,8 @@
 
             <!-- Botão Whatsapp -->
 
-            <button onclick="RedirecionarWhats()" class="flex bg-blue-200 h-15 w-55 items-center justify-center rounded-full shadow-md hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
+            <button onclick="RedirecionarWhats()"
+                class="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 hover:scale-105 transition shadow-xl text-white">
                 <img src="img/icon/iconWhatsapp.png" alt="Whatsapp" class="h-7">
                 <p class="flex ml-3">FAZER ORÇAMENTO</p>
             </button>
@@ -63,23 +64,18 @@
 
     <!-- Introdução -->
 
-    <section class="flex bg-blue-950 h-[450px] w-full items-center justify-center gap-25 text-white p-6">
-        <div class="flex flex-col flex-wrap lg:w-2/4">
-            <h2 class="font-poppins text-sm mb-4 text-blue-300">ATENDEMOS CURITIBA E REGIÃO</h2>
-            <h1 class="font-poppins text-4xl font-semibold mb-4">Higienização <span class="text-blue-500">&</span> <br>
-                impermeabilização <br>
-                em geral</h1>
-            <p class="text-blue-300 flex flex-wrap lg:w-3/5 xl:1/3">Transforme o seu ambiente com nossa higienização
-                especializada,
-                combinamos tecnologia biodegradável de alta qualidade para eliminar odores, sujeiras e
-                agentes alérgenos com eficácia total</p>
-
-            <button onclick="RedirecionarWhats()" class="flex bg-blue-200 h-10 w-2/3 items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold  transition duration-350 lg:w-3/5 xl:1/3 cursor-pointer">
-                <img src="img/icon/iconWhatsapp.png" alt="Whatsapp" class="h-7">
-                <p class="ml-3 text-blue-950">FAZER ORÇAMENTO</p>
-            </button>
+    <section class="relative h-[500px] flex items-center justify-center text-white"> <!-- BACKGROUND --> <img
+            src="img/sofa3.jpg" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-blue-950/80"></div> <!-- CONTEÚDO -->
+        <div class="relative z-10 max-w-3xl px-6 text-center">
+            <h2 class="text-blue-300 text-sm mb-3 tracking-widest"> ATENDEMOS CURITIBA E REGIÃO </h2>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight"> Higienização <span
+                    class="text-blue-400">&</span> impermeabilização </h1>
+            <p class="text-blue-200 mb-6"> Tecnologia profissional para eliminar sujeiras, odores e ácaros. </p> <button
+                onclick="RedirecionarWhats()"
+                class="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 hover:scale-105 transition shadow-xl">
+                <img src="img/icon/iconWhatsapp.png" class="h-6"> FAZER ORÇAMENTO </button>
         </div>
-        <img src="" alt="imagemMovelExibição" class="xl:pr-9">
     </section>
 
     <!-- Seção Onde Atendemos -->
@@ -91,7 +87,8 @@
         <div class="flex flex-col lg:flex-row h-auto w-9/10 lg:w-full xl:w-9/10 2xl:w-2/3 justify-around gap-8">
 
             <!-- Quadrado 1 -->
-            <div class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 hover:bg-blue-100 transition duration-500">
+            <div
+                class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md p-5 hover:-translate-y-2 hover:scale-105 hover:shadow-xl transition duration-500">
                 <div class="flex flex-row text-center justify-normal w-full">
                     <img src="img/icon/OndeAtendemos/iconPredio.png" class="h-8 w-8" alt="logoPredio">
                     <p class="ml-4 self-center font-semibold">COMERCIAL</p>
@@ -106,7 +103,8 @@
             </div>
 
             <!-- Quadrado 2 -->
-            <div class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 hover:bg-blue-100 transition duration-500">
+            <div
+                class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md p-5 hover:-translate-y-2 hover:scale-105 hover:shadow-xl transition duration-500">
                 <div class="flex flex-row text-center justify-normal w-full">
                     <img src="img/icon/OndeAtendemos/iconSofa.png" class="h-10 w-10" alt="logoPredio">
                     <p class="ml-4 self-center font-semibold">RESIDENCIAL</p>
@@ -122,7 +120,8 @@
             </div>
 
             <!-- Quadrado 3 -->
-            <div class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 hover:bg-blue-100 transition duration-500">
+            <div
+                class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md p-5 hover:-translate-y-2 hover:scale-105 hover:shadow-xl transition duration-500">
                 <div class="flex flex-row text-center justify-normal w-full">
                     <img src="img/icon/OndeAtendemos/iconProtecao.png" class="h-8 w-auto" alt="logoPredio">
                     <p class="ml-4 self-center font-semibold">PROTEÇÃO PROFISSIONAL</p>
@@ -139,7 +138,8 @@
 
         </div>
 
-        <button onclick="RedirecionarWhats()" class="flex bg-blue-200 h-10 w-3/7 items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
+        <button onclick="RedirecionarWhats()"
+            class="flex bg-blue-200 h-10 w-3/7 items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
             <img src="img/icon/iconWhatsapp.png" alt="Whatsapp" class="h-7">
             <p class="ml-3 text-blue-950">AGENDAR ATENDIMENTO</p>
         </button>
@@ -198,17 +198,21 @@
                 <ul class="space-y-3 text-gray-700">
                     <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Sofás e poltronas</li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Colchões e cabeceiras</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Colchões e cabeceiras
+                    </li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Cadeiras estofadas</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Cadeiras estofadas
+                    </li>
                     <hr class="opacity-30">
                     <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Puffs e recamiers</li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Bancos automotivos</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Bancos automotivos
+                    </li>
                     <hr class="opacity-30">
                 </ul>
 
-                <button onclick="RedirecionarWhats()" class="flex bg-blue-200 h-10 w-5/7 self-center items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
+                <button onclick="RedirecionarWhats()"
+                    class="flex bg-blue-200 h-10 w-5/7 self-center items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
                     <img src="img/icon/iconWhatsapp.png" alt="Whatsapp" class="h-7">
                     <p class="ml-3 text-blue-950">AGENDAR SERVIÇO</p>
                 </button>
@@ -268,19 +272,25 @@
                 </p>
 
                 <ul class="space-y-3 text-gray-700">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Proteção contra líquidos</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Proteção contra
+                        líquidos</li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Ajuda a evitar manchas permanentes</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Ajuda a evitar manchas
+                        permanentes</li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Mantém o tecido respirável</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Mantém o tecido
+                        respirável</li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Maior durabilidade do estofado</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Maior durabilidade do
+                        estofado</li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Ideal para ambientes com crianças e pets</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Ideal para ambientes
+                        com crianças e pets</li>
                     <hr class="opacity-30">
                 </ul>
 
-                <button onclick="RedirecionarWhats()" class="flex bg-blue-200 h-10 w-5/7 self-center items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
+                <button onclick="RedirecionarWhats()"
+                    class="flex bg-blue-200 h-10 w-5/7 self-center items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
                     <img src="img/icon/iconWhatsapp.png" alt="Whatsapp" class="h-7">
                     <p class="ml-3 text-blue-950">AGENDAR SERVIÇO</p>
                 </button>
@@ -336,23 +346,29 @@
 
                 <p class="text-gray-600 mb-6">
                     Recuperamos a aparência e maciez dos seus tapetes com técnicas especializadas.
-                    Tratamento profundo para renovação completa das fibras. 
+                    Tratamento profundo para renovação completa das fibras.
                 </p>
 
                 <ul class="space-y-3 text-gray-700">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Remoção de manchas profundas</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Remoção de manchas
+                        profundas</li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Eliminação de odores</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Eliminação de odores
+                    </li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Revitalização das fibras</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Revitalização das
+                        fibras</li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Recuperação das cores</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Recuperação das cores
+                    </li>
                     <hr class="opacity-30">
-                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Tratamento antibacteriano</li>
+                    <li class="hover:text-blue-800 hover:font-semibold transition duration-500">✔ Tratamento
+                        antibacteriano</li>
                     <hr class="opacity-30">
                 </ul>
 
-                <button onclick="RedirecionarWhats()" class="flex bg-blue-200 h-10 w-5/7 self-center items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
+                <button onclick="RedirecionarWhats()"
+                    class="flex bg-blue-200 h-10 w-5/7 self-center items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
                     <img src="img/icon/iconWhatsapp.png" alt="Whatsapp" class="h-7">
                     <p class="ml-3 text-blue-950">AGENDAR SERVIÇO</p>
                 </button>
@@ -371,7 +387,8 @@
         <div class="flex flex-col lg:flex-row h-auto w-9/10 lg:w-full xl:w-9/10 2xl:w-2/3 justify-around gap-8">
 
             <!-- Quadrado 1 -->
-            <div class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 transition duration-500">
+            <div
+                class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 transition duration-500">
                 <div class="flex flex-row text-center justify-normal w-full">
                     <img src="img/icon/BeneficiosLimpeza/LimpezaProfunda.PNG" class="h-10 w-auto" alt="iconeLimpeza">
                     <p class="ml-4 self-center font-semibold text-blue-900">LIMPEZA PROFUNDA DO SEU ESTOFADO</p>
@@ -384,9 +401,11 @@
             </div>
 
             <!-- Quadrado 2 -->
-            <div class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 transition duration-500">
+            <div
+                class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 transition duration-500">
                 <div class="flex flex-row text-center justify-normal w-full">
-                    <img src="img/icon/BeneficiosLimpeza/EliminacaoMausOdores.PNG" class="h-10 w-auto" alt="iconMausOdores">
+                    <img src="img/icon/BeneficiosLimpeza/EliminacaoMausOdores.PNG" class="h-10 w-auto"
+                        alt="iconMausOdores">
                     <p class="ml-4 self-center font-semibold text-blue-900">ELIMINAÇÃO EFICAZ DE MAUS ODORES</p>
                 </div>
                 <div class="flex flex-col flex-wrap gap-2 mt-3">
@@ -397,9 +416,11 @@
             </div>
 
             <!-- Quadrado 3 -->
-            <div class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 transition duration-500">
+            <div
+                class="flex flex-col h-auto bg-white lg:w-1/3 rounded-md shadow-md p-5 hover:-translate-y-2 transition duration-500">
                 <div class="flex flex-row text-center justify-normal w-full">
-                    <img src="img/icon/BeneficiosLimpeza/ProtecaoParaTodos.PNG" class="h-10 w-auto" alt="iconProtecaoTodos">
+                    <img src="img/icon/BeneficiosLimpeza/ProtecaoParaTodos.PNG" class="h-10 w-auto"
+                        alt="iconProtecaoTodos">
                     <p class="ml-4 self-center font-semibold text-blue-900">PROTEÇÃO PARA TODOS</p>
                 </div>
                 <div class="flex flex-col flex-wrap gap-2 mt-3">
@@ -444,7 +465,8 @@
             </div>
 
             <div class="flex justify-center items-center">
-                <button onclick="RedirecionarWhats()" class="flex bg-blue-200 h-10 w-5/7 items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
+                <button onclick="RedirecionarWhats()"
+                    class="flex bg-blue-200 h-10 w-5/7 items-center justify-center rounded-full shadow-md mt-6 hover:bg-blue-300 hover:font-semibold transition duration-350 cursor-pointer">
                     <img src="img/icon/iconWhatsapp.png" alt="Whatsapp" class="h-7">
                     <p class="ml-3 text-blue-950">QUERO ESSES RESULTADOS</p>
                 </button>
